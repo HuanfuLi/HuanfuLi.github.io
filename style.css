@@ -1,0 +1,376 @@
+/* 通用样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+    /* 大幅增加 scroll-padding-top 值，以确保完全不遮挡 */
+    scroll-padding-top: 70px; /* 从 50px 增加到 70px，提供充足空间 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* 按钮样式 */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button-small {
+    display: inline-block;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-small:hover {
+    background-color: #5a6268;
+}
+
+/* 导航栏 */
+header {
+    background-color: #333;
+    color: #fff;
+    /* 保持当前最小的 padding，如果再小可能影响美观或可点击性 */
+    padding: 2px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 调整最小高度，确保内容能够舒适地容纳 */
+    min-height: 40px; /* 稍微增加一点，确保内容不挤压 */
+}
+
+header .logo {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 12px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+    padding: 3px 0;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* 英雄部分 */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1500x500/cccccc/ffffff?text=Background+Image') no-repeat center center/cover; /* 替换为你的背景图 */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* 关于我 */
+.about-me {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about-me p {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+}
+
+/* 作品集 */
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #007bff;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 技能 */
+.skills {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-category {
+    background-color: #f0f8ff; /* 淡蓝色背景 */
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #333;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    background-color: #e2f0fe;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+
+/* 联系方式 */
+.contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #333;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+
+/* 页脚 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    body {
+        /* 移动端也相应调整 scroll-padding-top */
+        scroll-padding-top: 60px; /* 移动端 header 可能略高，预留更多空间 */
+    }
+
+    header .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    header nav ul {
+        margin-top: 8px;
+    }
+
+    header nav ul li {
+        margin: 0 6px;
+    }
+
+    header nav ul li a {
+        font-size: 0.85em;
+        padding: 2px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .project-card, .skill-category {
+        padding: 20px;
+    }
+
+    .contact-info p {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
