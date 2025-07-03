@@ -83,7 +83,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 40px; /* 保证 header 有一个最小高度 */
+    height: 5vh; 
 }
 
 header .logo {
@@ -128,7 +128,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 450px; /* 调整最小高度 */
+    height: 70vh;
 }
 
 .hero-content {
