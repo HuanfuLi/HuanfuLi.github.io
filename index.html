@@ -14,6 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -25,20 +26,53 @@
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
+                <div class="profile-picture-container">
+                    <img src="images/HuanfuLiAvatar.jpg" alt="Huanfu Li's Avatar" class="profile-picture">
+                </div>
                 <h2>Hi, I am Huanfu Li</h2>
                 <p>A Developer Focused on Back-end Development, Data Science, and Machine Learning.</p>
                 <a href="#portfolio" class="button">Check out My Portfolio</a>
             </div>
-            </div>
+        </div>
     </section>
 
     <section id="about" class="about-me">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! My name is Huanfu Li, a developer who is passionate about developing Android applications and AI-related software. I have a bachelor's degree in Computer Information Technology from Purdue University.</p>
-            <p>I'm proficient in solving complex problems, optimize code performance, and work in teams. I am curious about new technologies and enjoy taking on challenges.</p>
-            <p>Other than programming, I'm also interested in photography, racing cars, and do handicraft.</p>
+            <p>Hello! My name is Huanfu Li, a developer who is passionate about developing Android applications and AI-related software. I hold a B.S. in Computer and Information Technology (Minor in Political Science) from Purdue University.</p>
+            <p>I am proficient in solving complex problems, optimizing code performance, and collaborating effectively in teams. I am curious about new technologies and enjoy taking on challenges.</p>
+            <p>Outside of programming, I am also interested in photography, racing cars, and handicraft.</p>
             <a href="https://drive.google.com/file/d/115IGWhnLEvbsgkfcYB6v24HI4ekzAiyB/view?usp=sharing" download="HuanfuLi_Resume_v6.pdf" class="button download-resume-button">My Resume</a>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>Backend Developer & AI Engineer Intern - Chinasoft International Limited</h3>
+                    <p class="experience-date">05/2025 – 08/2025 </p>
+                    <ul>
+                        <li>Designed a stock price prediction model in Python using the LSTM algorithm to provide short-term stock price prediction based on data from Tushare API and increased simulated investment return by up to 30%. </li>
+                        <li>Tuned hyperparameters (e.g., neural units, batch size, time step, model architecture options like Bi-RNN, ResNet, and Transformer) to reduce average loss of the model by 90%. </li>
+                        <li>Generated automatic graphical prediction report by utilizing the matplotlib library to provide accessible results. </li>
+                        <li>Integrated early stopping technique to reduce training epoch and prevent the model from overfitting. </li>
+                    </ul>
+                    <a href="https://www.chinasofti.com/en/Aboutus/index.htm" target="_blank" class="button-small">About the Company</a>
+                </div>
+                <div class="experience-item">
+                    <h3>Undergraduate Data Science Researcher - The Datamine Project– Purdue University</h3>
+                    <p class="experience-date">08/2024 - 12/2024 </p>
+                    <ul>
+                        <li>Collaborated with HUMN Capital to develop a manager coaching tool based on ChatGPT 3.5 Turbo LLM in Python that analyzes employee engagement and probability of resignation to help train managers and leaders. </li>
+                        <li>Applied SpeechRecognition library and Whisper API to convert video into structured text for emotion analysis. </li>
+                        <li>Trained to use Python and R programming to extract data from large datasets in Jupyter Notebook. </li>
+                        <li>Managed software projects and assigned work with Kanban and Tableau as part of an Agile team. </li>
+                        <li>Leveraged Git for efficient version control and seamless collaboration on a GitHub-hosted team repository. </li>
+                    </ul>
+                    <a href="https://datamine.purdue.edu/" target="_blank" class="button-small">Learn More</a> </div>
+            </div>
         </div>
     </section>
 
@@ -47,23 +81,22 @@
             <h2>Portfolio</h2>
             <div class="portfolio-grid">
                 <div class="project-card">
-                    <h3>Networded Chat App</h3>
-                    <p>This Java-based networked chat application provides a client-server platform for real-time messaging. It features user management, chat history display, and supports internationalization (English, Chinese, French) through a Swing-based GUI.</p>
-                    <a href="https://github.com/HuanfuLi/NetworkedChatApp" target="_blank" class="button-small">GitHub</a>
-                    <!-- <a href="#" target="_blank" class="button-small">在线演示 (如果适用)</a> -->
-                </div>
-                <div class="project-card">
-                    <h3>AI Code Debug Assistant</h3>
-                    <p>This project is an AI-powered desktop assistant for programmers, offering code hints, suggestions, and debugging via a client-server architecture. It features a Swing GUI for user interaction, manages user accounts and history in a MySQL database, and supports multilingual interfaces.</p>
+                    <h3>AI Code Debug Assistant – Full Stack Java Project</h3>
+                    <p>Designed an AI Code Debugging tool in Java based on DeepSeek R1 7B LLM deployed on a private LM Studio server to assist learning and programming by providing hints, suggestions, and debugging solutions.  Built a duplexer server to connect clients with LM Studio server and database to provide integral functionalities.  Wrote dynamic JSON payloads using GSON to deliver flexible prompts based on combinations of user inputs.  Managed relational database via MySQL to introduce data persistence and user authentication capability.  Utilized FileStream to manipulate source files for fast debugging. Backups are stored in database for recovery.  Constructed Swing-based desktop and React-based web GUI internationalized and localized to 3 locales. </p>
                     <a href="https://github.com/HuanfuLi/AICodeDebugAssistant" target="_blank" class="button-small">GitHub</a>
                     <a href="https://drive.google.com/file/d/1uU3Su2DSkXuzQOyj_L147tQO30gEet8-/view?usp=sharing" target="_blank" class="button-small">Video Demonstration</a>
                 </div>
-                <!-- <div class="project-card">
-                    <h3>Bitcoin Price Prediction</h3>
-                    <p>这是另一个项目的描述，它是一个 **[项目类型]**，专注于 **[项目特点]**。使用了 **[技术栈]**。</p>
-                    <a href="#" target="_blank" class="button-small">在线演示 (如果适用)</a>
-                </div> -->
+                <div class="project-card">
+                    <h3>Networked Chat Application – Object-Oriented & Network Programming</h3>
+                    <p>Designed a client-server centralized networked chat application in Java with simple Swing GUI.  Implemented object-oriented programming and applied ArrayList and HashMap to store message and user objects.  Applied Socket, ServerSocket, and serialization to establish connection and transmit objects over the internet. </p>
+                    <a href="https://github.com/HuanfuLi/NetworkedChatApp" target="_blank" class="button-small">GitHub</a>
                 </div>
+                <div class="project-card">
+                    <h3>Virus-Detection Program – Data Structure & System Programming</h3>
+                    <p>Composed, compiled, and tested a virus detection program in C on the Linux platform.  Integrated Cloudmersive API via cURL to provide virus detection function and modularity for different APIs.  Configured virtual machines in VMware vSphere and used OpenSSL to securely deploy test environments. </p>
+                    <a href="https://github.com/HuanfuLi/VirusDetectionProgram" target="_blank" class="button-small">GitHub</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -72,59 +105,73 @@
             <h2>My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Front-end Dev</h3>
+                    <h3>Programming Languages</h3>
                     <ul>
-                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
-                        <li>React / Vue / Angular</li>
-                        <li>Webpack / Vite</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>SQL</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Back-end Dev</h3>
+                    <h3>Frameworks & Libraries</h3>
                     <ul>
-                        <li>Node.js / Python / Java</li>
-                        <li>Express / Django / Spring Boot</li>
-                        <li>RESTful APIs</li>
+                        <li>Spring Boot</li>
+                        <li>React</li>
+                        <li>TensorFlow</li>
+                        <li>Scikit-learn </li>
+                        <li>PyTorch </li>
+                        <li>NumPy, Pandas </li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Database</h3>
+                    <h3>Database & Tools</h3>
                     <ul>
-                        <li>MongoDB / PostgreSQL / MySQL</li>
-                        <li>Redis</li>
+                        <li>MySQL</li>
+                        <li>Oracle SQL Developer</li>
+                        <li>MongoDB (From previous context, good to include if relevant)</li>
+                        <li>Redis (From previous context, good to include if relevant)</li>
+                        <li>Git</li>
+                        <li>Docker (From previous context, good to include if relevant)</li>
+                        <li>Jupyter Notebook</li>
+                        <li>LM Studio</li>
+                        <li>cURL</li>
+                        <li>OpenSSL</li>
+                        <li>VMware vSphere</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
+                    <h3>AI & Data Science</h3>
                     <ul>
-                        <li>Git, Docker</li>
-                        <li>VS Code, Postman</li>
-                        <li>Linux</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning </li>
+                        <li>Natural Language Processing (NLP) </li>
+                        <li>Data Mining</li>
+                        <li>Data Analysis </li>
                     </ul>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
+            <p>如果您对我的作品感兴趣，或者希望与我交流，欢迎通过以下方式联系我：</p>
             <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:huanfuli4408@gmail.com">huanfuli4408@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> Phone: (+1) 4253182683</p>
-                <p><i class="fas fa-map-marker-alt"></i> Address: West Lafayette, IN, 47906, United States</p>
-            </div>
+                <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:huanfuli4408@gmail.com"> huanfuli4408@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+14253182683"> (+1) 425-318-2683</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: West Lafayette, IN, 47906, United States</p> </div>
             <div class="social-links">
                 <a href="https://github.com/HuanfuLi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/huanfu-li" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
+                </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 HuanfuLi. All rights reserved.</p>
-        </div>
+            <p>&copy; 2025 Huanfu Li. All rights reserved.</p> </div>
     </footer>
 
     <script src="script.js"></script>

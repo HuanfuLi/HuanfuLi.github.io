@@ -7,8 +7,8 @@ body {
     color: #333;
     background-color: #f4f4f4;
     scroll-behavior: smooth;
-    /* 大幅增加 scroll-padding-top 值，以确保完全不遮挡 */
-    scroll-padding-top: 70px; /* 从 50px 增加到 70px，提供充足空间 */
+    /* 再次调整 scroll-padding-top，确保足够的空间 */
+    scroll-padding-top: 60px; /* 预留给 header 的空间，确保标题完全显示 */
 }
 
 .container {
@@ -72,8 +72,7 @@ p {
 header {
     background-color: #333;
     color: #fff;
-    /* 保持当前最小的 padding，如果再小可能影响美观或可点击性 */
-    padding: 2px 0;
+    padding: 10px 0; /* 适中且统一的 padding */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -84,13 +83,12 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* 调整最小高度，确保内容能够舒适地容纳 */
-    min-height: 40px; /* 稍微增加一点，确保内容不挤压 */
+    min-height: 40px; /* 保证 header 有一个最小高度 */
 }
 
 header .logo {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.6em; /* 调整 logo 字体大小 */
     font-weight: bold;
     line-height: 1;
     margin: 0;
@@ -105,15 +103,15 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-left: 12px;
+    margin-left: 20px; /* 导航项间距 */
 }
 
 header nav ul li a {
     color: #fff;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em; /* 导航链接字体大小 */
     transition: color 0.3s ease;
-    padding: 3px 0;
+    padding: 5px 0; /* 导航链接的垂直内边距，使其更容易点击 */
     display: inline-block;
 }
 
@@ -126,25 +124,47 @@ header nav ul li a:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1500x500/cccccc/ffffff?text=Background+Image') no-repeat center center/cover; /* 替换为你的背景图 */
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px; /* 调整 padding 适应头像 */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
+    min-height: 450px; /* 调整最小高度 */
 }
 
 .hero-content {
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 确保内容居中 */
 }
+
+/* 头像样式 */
+.profile-picture-container {
+    width: 150px; /* 头像容器宽度 */
+    height: 150px; /* 头像容器高度 */
+    border-radius: 50%; /* 使其成为圆形 */
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    margin-bottom: 25px; /* 与下方文字的间距 */
+    border: 5px solid #007bff; /* 添加边框 */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* 添加发光效果 */
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片覆盖整个容器，并保持比例 */
+    display: block; /* 消除图片下方的额外空间 */
+}
+
 
 .hero h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 2.8em; /* 稍微减小字体，与头像更协调 */
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.1em; /* 稍微减小字体 */
     margin-bottom: 30px;
     text-align: center;
 }
@@ -166,9 +186,67 @@ header nav ul li a:hover {
     margin: 0 auto 15px auto;
 }
 
+/* 职业经历 */
+.experience {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.experience-list {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left; /* 使经历列表项左对齐 */
+}
+
+.experience-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: left; /* 职位名称左对齐 */
+}
+
+.experience-item .experience-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left; /* 日期左对齐 */
+}
+
+.experience-item ul {
+    list-style: disc; /* 使用实心圆点列表 */
+    margin: 0;
+    padding-left: 20px; /* 列表项缩进 */
+}
+
+.experience-item ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
 /* 作品集 */
 .portfolio {
-    background-color: #f9f9f9;
+    background-color: #fff; /* 更改背景色，与上方职业经历区分 */
     padding: 60px 0;
     text-align: center;
 }
@@ -186,8 +264,8 @@ header nav ul li a:hover {
 }
 
 .project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f0f8ff; /* 淡蓝色背景，突出卡片 */
+    border: 1px solid #cceeff; /* 蓝色边框 */
     border-radius: 8px;
     padding: 25px;
     text-align: left;
@@ -214,7 +292,7 @@ header nav ul li a:hover {
 
 /* 技能 */
 .skills {
-    background-color: #fff;
+    background-color: #f9f9f9; /* 更改背景色 */
     padding: 60px 0;
     text-align: center;
 }
@@ -232,7 +310,7 @@ header nav ul li a:hover {
 }
 
 .skill-category {
-    background-color: #f0f8ff; /* 淡蓝色背景 */
+    background-color: #fff; /* 技能卡片背景改为白色 */
     border-radius: 8px;
     padding: 25px;
     text-align: left;
@@ -264,7 +342,7 @@ header nav ul li a:hover {
 
 /* 联系方式 */
 .contact {
-    background-color: #f9f9f9;
+    background-color: #fff; /* 更改背景色 */
     padding: 60px 0;
     text-align: center;
 }
@@ -330,8 +408,7 @@ footer p {
 /* 响应式设计 */
 @media (max-width: 768px) {
     body {
-        /* 移动端也相应调整 scroll-padding-top */
-        scroll-padding-top: 60px; /* 移动端 header 可能略高，预留更多空间 */
+        scroll-padding-top: 55px; /* 移动端 header 可能略高，预留更多空间 */
     }
 
     header .container {
@@ -340,27 +417,37 @@ footer p {
     }
 
     header nav ul {
-        margin-top: 8px;
+        margin-top: 10px;
     }
 
     header nav ul li {
-        margin: 0 6px;
+        margin: 0 8px;
     }
 
     header nav ul li a {
-        font-size: 0.85em;
-        padding: 2px 0;
+        font-size: 0.9em;
+        padding: 5px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+        min-height: 400px;
     }
 
     .hero h2 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .hero p {
         font-size: 1em;
     }
 
-    .project-card, .skill-category {
+    .profile-picture-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-card, .skill-category, .experience-item {
         padding: 20px;
     }
 
