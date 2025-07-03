@@ -1,6 +1,6 @@
 // 你可以在这里添加一些交互功能，例如：
 // 平滑滚动效果
-document.querySelectorAll('nav a').forEach(anchor => {
+document.querySelectorAll('nav a, .scroll-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
