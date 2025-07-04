@@ -121,7 +121,7 @@ header nav ul li a:hover {
 
 /* 英雄部分 */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1500x500/cccccc/ffffff?text=Background+Image') no-repeat center center/cover; /* 替换为你的背景图 */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/HeroBackground.jpg') no-repeat center center/cover; /* 替换为你的背景图 */
     color: #fff;
     text-align: center;
     padding: 80px 20px; /* 调整 padding 适应头像 */
